@@ -6,7 +6,8 @@ const BuildControl = (props) => ( <
     <
     div className = { css.Label } > { props.ingredient } < /div>{" "} <
     button disabled = { props.disabled[props.type] }
-    onClick = { props.ortsHasah }
+    onClick = {
+        () => props.ortsHasah(props.type) }
     className = { css.Less } >
     { " " }
     Хасах { " " } <
